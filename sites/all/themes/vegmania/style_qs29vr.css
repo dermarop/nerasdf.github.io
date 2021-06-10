@@ -1,0 +1,3626 @@
+/* ... global resets ... */
+* { margin:0; padding:0;}
+
+/* General */
+
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin:0;
+  padding:0;
+}
+
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+  padding: 1em 0;
+  color: #000; 
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+p {
+  padding: 0 0 1em 0;
+}
+
+a {
+  color: #71b034;
+  text-decoration: none;
+}
+
+article .node a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #679e33;
+  text-decoration: underline;
+}
+
+a img, a:hover img {
+  text-decoration: none;
+}
+
+
+/* Table */
+
+tbody {
+  border-top:none;
+}
+
+table td {
+  font-size: 15px;
+  padding: 5px;
+}
+
+td.field-label {
+  font-weight: bold;
+}
+
+tr.odd td, tr.even td {
+  padding: 0.3em;
+}
+
+tr.even, tr.odd {
+  background-color: #fff;
+  border-bottom: 0px;
+}
+
+tr.odd {
+  background-color: #efffc6;
+}
+
+thead th {
+  border-bottom: 0px;
+}
+
+
+/* List */
+
+.item-list ul li,
+ul {
+  list-style-type: none;
+}
+
+li.leaf, li.collapsed, li.expanded {
+  list-style-image: none;
+  list-style-type: none;
+  padding:0;
+}
+
+article ul,
+article ol {
+  margin-bottom: 1em;
+}
+
+article ul {
+  list-style-type: disc;
+}
+
+article ul li,
+article ol li {
+  margin-left: 1em;
+}
+
+ul.links li {
+  padding: 0;
+}
+
+
+/* Regions */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.container .inner,
+.container .sidebar {
+  float: left; 
+}
+
+.container .inner {
+  width: 850px;
+  padding: 0;
+}
+
+.page-knihy .container .inner,
+.page-recepty .container .inner,
+.front .container .inner,
+.page-restaurace .container .inner,
+.page-prodejny .container .inner,
+.node-type-page .container .inner {
+  width: 1170px;
+  float: none;
+}
+
+.node-fullwidth .container {
+  width: 840px;
+}
+
+.page-node-1898 .container .inner,
+.page-node-1897 .container .inner,
+.page-node-1831 .container .inner,
+.page-node-293 .container .inner,
+.page-node-47 .container .inner,
+.page-node-157 .container .inner,
+.page-node-158 .container .inner,
+.page-node-1704 .container .inner {
+  width: 850px;
+  padding: 0;
+  float: left;
+}
+
+.container .sidebar {
+  width: 300px;
+  padding: 25px 0 0 20px;
+}
+
+
+/* Header */
+
+#head-full {
+  background: rgba(93, 141, 28, 0.85);
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
+#nav-container {
+  height: 75px;
+}
+
+#logo {
+  width: 210px;
+  height: 75px;
+  float: left;
+}
+
+#logo a {
+  background: url('images/logo.png') no-repeat left 0;
+  display: block;
+  width: 210px;
+  height: 75px;
+  padding: 0px;
+  margin: 0px;
+  text-indent: -9999px;
+}
+
+
+/* Search */
+
+#search {
+  width: 200px;
+  height: 75px;
+  float: right;
+}
+
+#search-form label {
+  display: none;
+}
+
+#search a.search-triger,
+.search-form input[type="submit"],
+#search a.search-link {
+  background: url('images/seach-icon.png') no-repeat 0 0;
+  border: medium none;
+  font-size: 0;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  margin: 0 0 0 170px;
+  line-height: 80px;
+}
+
+#search a.search-triger {
+  margin: 28px 0 0 168px;
+}
+
+.search-form input[type="text"] {
+  width: 165px;
+  padding: 0;
+  height: 30px;
+  border: 2px solid #000;
+  background: transparent;
+  color: #fff;
+  text-indent: 5px;
+  float: left;
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.search-form input[type="submit"] {
+  background: #88c73a url('images/seach-icon.png') no-repeat 0 0;
+  height: 30px;
+  width: 30px;
+  margin: 0 0 0 5px;
+  display: block;
+  float: left;
+  border-radius: 2px;
+}
+
+#block-system-main .search-form input[type="text"] {
+  width: 265px;
+  color: #000;
+}
+
+.page-search #block-system-main .search-form,
+.page-search #block-system-main  h2 {
+  padding-left: 17px;
+}
+
+.page-search #head-full #search,
+#search a.search-link {
+  display: none;
+}
+
+#search .form-item, 
+#search .form-actions {
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+.search-form #edit-basic {
+  margin-top: 32px;
+}
+
+.container-inline div, .container-inline label {
+  display: inline;
+}
+
+#head-full .container-inline label {
+  display: none;
+}
+
+#search-form {
+  display: none;
+}
+
+.page-search #block-system-main #search-form {
+  display: block;
+  width: 100%;
+}
+
+.page-search #block-system-main h2 {
+  clear: both;
+}
+
+
+/* Menu */
+
+#navigation {
+  height: 70px;
+  float: left;
+}
+
+#navigation ul {
+  float: left;
+  margin-top: 28px;
+}
+
+#navigation ul ul {
+  margin-top: 0;
+}
+
+#navigation ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 11px;
+}
+
+#navigation ul li a {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  margin: 0;
+  line-height: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#navigation ul li.menu-7042,
+#navigation ul li.menu-7043,
+#navigation ul li.menu-8221 {
+  padding: 0 5px;
+}
+
+#navigation ul li.menu-7676 {
+  padding: 0 3px 0 8px;
+}
+
+#navigation ul li.menu-7676 a,
+#navigation ul li.menu-7042 a,
+#navigation ul li.menu-7043 a,
+#navigation ul li.menu-8221 a {
+  background: transparent url('images/facebook.png') no-repeat 0 7px;
+  text-indent: -9999px;
+  display: block;
+  width: 24px;
+}
+
+#navigation ul li.menu-7043 a {
+  background: transparent url('images/instagram.png') no-repeat 0 7px;
+}
+
+#navigation ul li.menu-7676 a {
+  background: transparent url('images/email.png') no-repeat 0 5px;
+}
+
+#navigation ul li.menu-8221 a {
+  background: transparent url('images/youtube-square-brands.svg') no-repeat 0 3px;
+  filter: invert(100%);
+  width: 21px;
+  height: 33px;
+}
+
+#navigation ul li a:hover,
+#navigation ul li a.active {
+  color: #000;
+}
+
+.node-type-restaurace #navigation ul li.menu-7042 {
+  display: none;
+}
+
+ul.nice-menu li,
+ul.nice-menu-down li.menuparent,
+ul.nice-menu-down li.menuparent:hover {
+  border: 0;
+  background: transparent;
+}
+
+ul.nice-menu-down .menuparent a,
+#navigation ul li ul li a {
+  padding-right: 0;
+  text-indent: 5px;
+  font-size: 15px;
+}
+
+#navigation ul ul li {
+  padding: 0 2px;
+}
+
+ul .menu-6955 ul li {
+  width: 280px;
+}
+
+ul.nice-menu a {
+  display: block;
+  color: #e8a30f;
+  padding: 0;
+  text-align: center;
+}
+
+ul.nice-menu ul a {
+  text-align: left;
+}
+
+ul.nice-menu a:hover {
+  text-decoration: none;
+}
+
+ul.nice-menu-down li.menuparent,
+ul.nice-menu-down li.menuparent:hover {
+  background-image: none;
+}
+
+ul.nice-menu ul {
+  top: 40px;
+  border-top: 0;
+}
+
+#navigation ul li ul li {
+  background-color: rgba(93, 141, 28, 1);
+}
+
+#navigation ul li.menu-7545 {
+  display: none;
+}
+
+/* Sticky nav */
+
+.stickynav-active {
+  background: rgba(93, 141, 28, 0.85);
+  margin-top: 0;
+  width: 100%;
+}
+
+.stickynav-active .hide-logo {
+  text-indent: 10px;
+}
+
+#nav-container.stickynav-active,
+.stickynav-active #navigation {
+  height: 50px;
+}
+
+.stickynav-active #navigation ul {
+  margin-top: 8px;
+}
+
+.stickynav-active #logo {
+  width: 120px;
+  height: 45px;
+}
+
+.stickynav-active #logo a {
+  background: url('images/logo-height-45.png') no-repeat left 0;
+  width: 120px;
+  height: 45px;
+}
+
+.stickynav-active  #search a.search-triger {
+  margin: 13px 0 0 168px;
+}
+
+.stickynav-active ul.nice-menu ul {
+  top: 33px;
+}
+
+
+/* Regions */
+
+#breadcrumb {
+  height: 40px;
+  line-height: 40px;
+  font-size: 11px;
+  display: none;
+}
+
+#page {
+  min-height: 350px;
+  padding-bottom: 30px;
+  clear: both;
+}
+
+.node-type-fullwidth #page {
+  padding-bottom: 0;
+}
+
+.page-kampane article h1.page-title,
+.page-kvizy article h1.page-title,
+.page-knihy article h1.page-title,
+.page-vegpedie article h1.page-title {
+  padding-left: 15px;
+}
+
+.page-taxonomy article h1.page-title:first-letter {
+  text-transform: uppercase;
+}
+
+article {
+  background: rgba(255, 255, 255, 0.7) ;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.page-clanky article {
+  padding-bottom: 10px;
+}
+
+.page-restaurace article,
+.page-prodejny article,
+.page-recepty article,
+.page-user article,
+.page-node article {
+  padding: 15px;
+}
+
+.round-image {
+  border-radius: 50%;
+  margin: 0 30px 0 10px;
+}
+
+.zdroje {
+  font-size: 14px;
+}
+
+article .node .zdroje a {
+  font-weight: normal;
+}
+
+/* landing page */
+
+.node-type-page h2 {
+  clear: both;
+}
+.node-type-page .text-box {
+  font-size: 18px;
+  max-width: 1090px;
+  margin-bottom: 25px;
+}
+
+.node-type-page article .node img {
+  max-width: 1090px;
+  height: auto;
+}
+
+
+/* patra */
+
+.entity-paragraphs-item {
+  clear: both;
+  padding-bottom: 50px;
+}
+
+.node-type-fullwidth .entity-paragraphs-item {
+  padding-bottom: 0;
+}
+
+.entity-paragraphs-item:after{
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.field-name-field-nadpis-link,
+.field-name-field-nadpis {
+  font-family: 'Bitter', serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+.paragraphs-item-kurzy .field-name-field-nadpis-link,
+.paragraphs-item-obrazektext .field-name-field-nadpis {
+  text-align: left;
+  font-size: 20px;
+}
+
+.field-name-field-textvlevo,
+.field-name-field-textvpravo,
+.field-name-field-obrazekparagraf,
+.field-name-field-textparagraf {
+  float: left;
+  width: 50%;
+}
+
+.field-name-field-textparagraf {
+  width: 62%;
+}
+
+.field-name-field-obrazekparagraf {
+  width: 38%;
+}
+
+.field-name-field-textvlevo .field-item,
+.field-name-field-textvpravo .field-item {
+  padding: 0 10px;
+}
+
+.navigation-block {
+  margin: 35px auto;
+}
+
+.inzerce-block {
+  margin-top: 35px;
+}
+
+/* Promo */
+
+.kurz-promo {
+  font-size: 18px;
+  padding: 10px 15px 10px 15px;
+  background: #efefef;
+  margin: 30px 0 15px 0;
+  border-radius: 5px;
+  clear: both;
+}
+
+.page-taxonomy-term .kurz-promo,
+.node-type-kniha .kurz-promo {
+  font-size: 15px;
+  margin: 10px 0 0 0;
+}
+
+.kurz-promo img {
+  margin: 2px 10px 0 0;
+}
+
+.page-clanky .kurz-promo img {
+  margin: 0 15px 0 0;
+  border-radius: 5px;
+}
+
+.vanoce-promo {
+  font-size: 16px;
+  padding: 10px 15px 10px 5px;
+  background: #efefef;
+  margin: 15px 5px 30px 0;
+}
+
+.vanoce-promo img {
+  margin: 5px 10px;
+}
+
+.vegmania-block {
+  margin-bottom: 2em;
+}
+
+.vegmania-block .tagclouds {
+  margin-right: 0;
+}
+
+
+/* Views */
+
+.field-name-field-obrazekparagraf img,
+.views-field-field-obrazek,
+.search-result .search-image,
+.view-similarterms .views-row {
+  float: left;
+  margin-right: 20px;
+}
+
+.view-similarterms .views-field-field-obrazek,
+.view-knihy .views-field-field-obrazek {
+  float: none;
+  margin-right: 0;
+}
+
+.field-name-field-obrazekparagraf img {
+  margin: 5px 20px 15px 0;
+}
+
+.page-knihy article .views-field-field-obrazek {
+  height: 265px;
+  text-align: center;
+  float: none;
+}
+
+.node-kniha .view-display-id-block_1 .views-field-field-obrazek {
+  height: 265px;
+  overflow: hidden;
+}
+
+.view-clanky .views-field-field-obrazek {
+  margin-top: 5px;
+}
+
+.views-row {
+  padding: 10px 15px 10px 0;
+}
+
+.page-taxonomy .view-header .views-row {
+  padding: 10px 0;
+}
+
+
+.view-similarterms .views-row {
+  margin-right: 10px;
+  padding: 10px 0;
+  width: 400px;
+  min-height: 355px;
+}
+
+.view-dlazdice .views-row {
+  min-height: auto;
+}
+
+.view-similarterms h3 {
+  padding-bottom: 5px;
+}
+
+.views-row h2 {
+  text-align: left;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.views-field-field-upoutavka,
+.views-field-views-ifempty,
+.views-field-body {
+  line-height: 1.4;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.page-restaurace .views-row h2,
+.page-prodejny .views-row h2  {
+  margin: 5px 0 5px 0;
+}
+
+.views-row h2 a {
+  color: #8dc63f;
+}
+
+.views-row h2 a:hover {
+  color: #4d4d4d;
+}
+
+.view-knihy .views-field-title {
+  font-weight: bold;
+  font-size: 15px;
+  height: 48px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.view-knihy .views-field-field-autor {
+  font-size: 14px;
+}
+
+.view-knihy .views-field-field-autor {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.view-knihy .views-field-body,
+.views-field-name {
+  font-size: 13px;
+}
+
+.view-knihy .views-field-body .views-more-link {
+  font-weight: bold;
+}
+
+.field-name-field-obrazekparagraf img,
+article .views-field-field-obrazek img,
+.search-result .search-image img {
+  width: 295px;
+  height: auto;
+}
+
+.view-similarterms .views-field-field-obrazek img {
+  width: 400px;
+}
+
+.paragraphs-item-kurzy .field-name-field-obrazekparagraf img {
+  width: 415px;
+  height: auto;
+}
+
+.view-knihy .views-field-field-obrazek img {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.page-knihy article h3 {
+  clear: both;
+  padding: 15px 0;
+}
+
+.views-field-name,
+.views-field-created-1,
+.views-field-created {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.views-field-field-recepty-postup {
+  margin-bottom: 1em;
+}
+
+.view-knihy .views-field-body {
+  margin-bottom: 0;
+}
+
+.views-field-field-upoutavka {
+  line-height: 1.3;
+}
+
+.field-name-field-tagy a,
+.views-field-field-tagy a {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 25px;
+  border: 1px solid #8dc63f;
+  border-radius: 3px;
+  color: #8dc63f;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 20px 0 0;
+}
+
+.field-name-field-tagy a:hover,
+.views-field-field-tagy a:hover {
+  color: #fff;
+  background-color: #8dc63f;
+  text-decoration: none;
+}
+
+.page-knihy article .view-content {
+  margin-left: 17px;
+}
+
+.front .view-wiki .view-content {
+  margin-left: 0;
+}
+
+.page-node-1289 .view-wiki .view-content {
+  margin-left: 0;
+}
+
+.view-wiki h2 {
+  clear: both;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 21px;
+}
+
+.field-name-field-galeriemezitext .field-item,
+.field-name-field-clanek-fotografie .field-item,
+.field-name-field-restaurace-fotografie .field-item,
+.field-name-field-prodejna-fotografie .field-item,
+.view-knihy .views-row,
+.view-relevantniwiki .views-row,
+.view-relevantnirecepty .views-row,
+.view-aktualniclanky .views-row,
+.view-wiki .views-row,
+.view-affiliate .views-row {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 17px;
+  width: 260px;
+  padding: 0;
+}
+
+.view-affiliate .views-row {
+  margin-bottom: 30px;
+}
+
+.view-knihy .views-row,
+.view-relevantniwiki .views-row,
+.view-affiliate .views-row,
+.view-wiki .views-row {
+  margin-right: 18px;
+  width: 190px;
+  position: relative;
+}
+
+.view-knihy .views-row {
+  margin-right: 21px;
+  width: 210px;
+  min-height: 550px;
+}
+
+.node-kniha .view-knihy .views-row {
+  margin-right: 15px;
+  width: 190px;
+  min-height: 370px;
+}
+
+.node-kniha .field-name-field-autor {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.node-kniha .field-name-field-autor .field-label {
+  float: left;
+}
+
+.view-relevantnirecepty .views-row {
+  position: relative;
+}
+
+.view-aktualniclanky .views-row {
+  min-height: 230px;
+}
+
+.node-type-kniha .view-display-id-block_1 .views-row:nth-of-type(4n),
+.field-name-field-galeriemezitext .field-item:nth-of-type(3n),
+.field-name-field-clanek-fotografie .field-item:nth-of-type(3n),
+.field-name-field-restaurace-fotografie .field-item:nth-of-type(3n),
+.field-name-field-prodejna-fotografie .field-item:nth-of-type(3n),
+.view-relevantnirecepty .views-row:nth-of-type(3n),
+.view-aktualniclanky .views-row:nth-of-type(3n),
+.view-affiliate .views-row:nth-of-type(4n),
+.view-relevantniwiki .views-row:nth-of-type(4n),
+.view-knihy .views-row:nth-of-type(5n),
+.view-wiki .views-row-4,
+.view-wiki .views-row-8,
+.view-wiki .views-row-12,
+.view-wiki .views-row-16 {
+  margin-right: 0;
+}
+
+.view-relevantnirecepty .views-row .views-field-title,
+.view-relevantniwiki .views-row .views-field-title,
+.view-affiliate .views-row .views-field-title,
+.view-wiki .views-row .views-field-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(251,251,251,0.8);
+  padding: 1px;
+  text-align: center;
+}
+
+.front .view-wiki .views-row .views-field-title,
+.page-node-1289 .view-wiki .views-row .views-field-title {
+  position: static;
+  background-color: transparent;
+  text-align: left;
+}
+
+.view-relevantnirecepty .views-row .views-field-title,
+.view-affiliate .views-row .views-field-title {
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-affiliate .views-row .views-field-title {
+  background-color: rgba(213,29,68,0.9);
+}
+
+.view-relevantnirecepty .views-row .views-field-title a,
+.view-relevantniwiki .views-row .views-field-title a,
+.view-affiliate .views-field-title a,
+.view-relevantniwiki .views-field-title a,
+.view-relevantnirecepty .views-field-title a,
+.view-aktualniclanky .views-field-title a,
+.view-wiki .views-field-title a {
+  font-weight: bold;
+  color: #0492ae;
+  font-size: 17px;
+  font-family: 'Bitter', serif;
+}
+
+.front .view-wiki .views-field-title a,
+.page-node-1289 .view-wiki .views-field-title a {
+  color: #8dc63f;
+  font-size: 18px;
+  text-shadow: none;
+}
+
+.view-affiliate .views-field-title a,
+.view-relevantniwiki .views-field-title a,
+.view-relevantnirecepty .views-field-title a,
+.view-aktualniclanky .views-field-title a {
+  font-size: 15px;
+}
+
+.view-affiliate .views-row .views-field-title a {
+  font-weight: normal;
+  color: #fff;
+  font-size: 14px;
+}
+
+.field-name-field-galeriemezitext .field-item img,
+.view-relevantniwiki .views-row img,
+.view-affiliate .views-field-field-reklamaobr img,
+.field-name-field-clanek-fotografie img,
+.field-name-field-restaurace-fotografie img,
+.field-name-field-prodejna-fotografie img,
+.view-relevantniwiki .views-field-field-obrazek img,
+.view-relevantnirecepty .views-field-field-obrazek img,
+.view-aktualniclanky .views-field-field-obrazek img {
+  height: auto;
+  width: 260px;
+}
+
+.view-relevantniwiki .views-row img,
+.view-affiliate .views-field-field-reklamaobr img {
+  width: 190px;
+}
+
+#block-views-affiliate-block-1 h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.similar-block:after,
+.front-social:after,
+.field-name-field-clanek-fotografie:after,
+#newsletter:after,
+#top-articles:after,
+.views-row:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.paragraphs-item-obrazektext .field-name-field-textparagraf {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+
+/* Front */
+
+h1 {
+  text-align: left;
+  padding-left: 17px;
+}
+
+.node-type-fullwidth h1 {
+  padding-left: 0;
+}
+
+#top-articles h1 {
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+article h1.page-title {
+  padding: 15px 0;
+  font-size: 34px;
+  text-transform: none;
+}
+
+.page-search article h1.page-title {
+  padding-left: 17px;
+  font-size: 18px;
+}
+
+.front h1 {
+  text-align: center;
+} 
+
+.front-sledujte {
+  padding: 20px 20px 0 20px;
+}
+
+.front-sledujte h1 {
+  padding-top: 0;
+}
+
+.front .field-name-body {
+  font-size: 18px;
+}
+
+div.toc-filter-back-to-top {
+  border-top: 0;
+}
+
+div.toc-filter-back-to-top a:link,
+div.toc-filter-back-to-top a:visited {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+div.toc-filter .item-list > h3 {
+  padding-top: 0;
+  font-size: 16px;
+}
+
+ /* node fullwidth */
+
+.green-width,
+.blue-width,
+.red-width,
+.white-width {
+  background: #86BF3D;
+  padding: 45px 0 30px 0;
+  color: #fff;
+}
+
+.blue-width {
+  background: #0492ae;
+}
+
+.red-width {
+  background: #f23b3b;
+}
+
+.white-width {
+  background: #fff;
+  color: #444;
+}
+
+
+ /* bannery */
+
+.fullwidth-banner {
+  margin-top: 20px;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+article .node .fullwidth-banner img {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+}
+
+.half-box {
+  width: 50%;
+  float: left;
+}
+
+.reference .half-box {
+  width: 48%;
+  padding: 0 2% 10px 0;
+  font-size: 15px;
+}
+
+.box-celasirka,
+.box-pulsirky {
+  background: #f6f6f6;
+  padding: 15px;
+  border-left: 4px solid #86BF3D;
+  margin: 0 auto 1em auto;
+}
+
+.box-pulsirky {
+  padding: 15px 10px 15px 15px;
+  float: right;
+  width: 45%;
+  margin: 0 0 .5em 1.5em;
+}
+
+
+ /* novy obsah */
+
+.front-blog {
+  clear: both;
+}
+
+.front h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.page-restaurace .views-row,
+.page-prodejny .views-row,
+.page-recepty .views-row,
+.front .views-row,
+.page-node-1289 .views-row,
+.page-node-1899 .views-row {
+  padding: 10px 5px;
+  float: left;
+  width: 265px;
+  margin-right: 10px;
+}
+
+.view-wiki .views-row,
+.page-recepty .view-recepty .views-row,
+.front .view-recepty .views-row,
+.page-node-1289 .view-recepty .views-row,
+.page-node-1899 .view-recepty .views-row {
+  float: left;
+  width: 265px;
+  margin-right: 10px;
+}
+
+.page-restaurace article .views-field-field-obrazek,
+.page-prodejny article .views-field-field-obrazek,
+.page-recepty .views-field-field-obrazek,
+.front .views-field-field-obrazek,
+.page-node-1289 .views-field-field-obrazek,
+.page-node-1899 .views-field-field-obrazek {
+  float: none;
+  margin-right: 0;
+}
+
+.page-restaurace article .views-row img,
+.page-prodejny article .views-row img,
+.page-recepty .views-row img,
+.front .views-row img,
+.page-node-1289 .views-row img,
+.page-node-1899 .views-row img,
+.view-wiki .views-field-field-obrazek img {
+  width: 265px;
+  height: auto;
+}
+
+.page-node-1289 .view-knihy .views-row {
+  padding: 0;
+  margin-right: 21px;
+  width: 210px;
+  min-height: 400px;
+}
+
+.page-node-1289 .view-knihy .views-field-field-obrazek img {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.page-node-1289 .view-knihy .views-row:nth-of-type(5n) {
+  margin-right: 0;
+}
+
+.page-restaurace .view-restaurace .views-row,
+.page-prodejny .view-prodejny .views-row,
+.page-recepty .view-recepty .views-row {
+  min-height: 290px;
+}
+
+.page-restaurace .views-field-title h2,
+.page-restaurace .views-field-title h2 a,
+.page-prodejny .views-field-title h2,
+.page-prodejny .views-field-title h2 a,
+.page-recepty .views-field-title h2,
+.page-recepty .views-field-title h2 a {
+  font-size: 17px;
+}
+
+.page-restaurace .views-field-title h2 a,
+.page-prodejny .views-field-title h2 a,
+.page-recepty .views-field-title h2 a {
+  color: #0492ae;
+}
+
+.page-restaurace .wrapper,
+.page-prodejny .wrapper,
+.page-recepty .wrapper {
+  margin-bottom: 20px;
+}
+
+.numbers {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.numbers h3 {
+  font-size: 120px;
+  font-weight: 800;
+  text-align: center;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.numbers .views-row-1 h3 a,
+.numbers .views-row-2 h3 a,
+.numbers .views-row-3 h3 a,
+.numbers .views-row-4 h3 a {
+  transition: background-color 1s ease;
+}
+
+.numbers .views-row-1 h3 a {
+  color: #679e33;
+}
+
+.numbers .views-row-2 h3 a {
+  color: #f23b3b;
+}
+
+.numbers .views-row-3 h3 a {
+  color: #0492ae;
+}
+
+.numbers .views-row-4 h3 a {
+  color: #ff9000;
+}
+
+.numbers .views-row h3 a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.node-type-page #mc_embed_signup_scroll {
+  margin-left: 0;
+}
+
+.sidebar #mc_embed_signup_scroll {
+  margin-left: 0px;
+}
+
+.mc-field-group {
+  padding-bottom: 10px;
+}
+
+#obeznik,
+article #newsletter {
+  margin: 20px 0 50px 0;
+  background: #efefef;
+  padding: 0 13px 13px 13px;
+  border-radius: 5px;
+}
+
+.node-type-page article #newsletter {
+  padding: 13px;
+}
+
+.page-prodejny .view-prodejny .insert-block-box,
+.page-restaurace .view-restaurace .insert-block-box,
+.page-recepty .view-recepty .insert-block-box {
+  width: 100% !important;
+  min-height: auto !important;
+}
+
+.insert-block-box .kurz-promo {
+  margin: 15px 17px 15px 0;
+}
+
+.page-restaurace .view-restaurace .insert-block-box .kurz-promo,
+.page-prodejny .view-prodejny .insert-block-box .kurz-promo {
+  margin: 0 17px 15px 0;
+}
+
+#obeznik img,
+article #newsletter img {
+  margin-top: 14px;
+  border-radius: 5px;
+}
+
+#obeznik input[type="email"],
+#obeznik input[type="text"],
+#newsletter input[type="email"],
+#newsletter input[type="text"],
+.half-box input[type="email"],
+.half-box input[type="text"]  {
+  font-size: 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.mc-field-group-email label {
+  line-height: 30px;
+}
+
+#obeznik input[type="email"],
+#newsletter input[type="email"],
+.half-box input[type="email"]  {
+  height: 45px;
+}
+
+#mc_embed_signup input[type="email"],
+#mc_embed_signup input[type="text"],
+.sidebar input[type="email"],
+.sidebar input[type="text"] {
+  border-radius: 5px;
+  font-size: 20px;
+  width: 250px;
+}
+
+#mc-embedded-subscribe,
+.field-name-field-recenze a,
+.field-name-field-koupit a,
+.views-field-field-koupit a,
+.sidebar a.sidebar-button,
+a.sidebar-button {
+  border-radius: 3px;
+  background: #f23b3b;
+  color: #fff;
+  display: block;
+  font-size: 17px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto;
+  text-align: center;
+  width: 300px;
+}
+
+.sidebar a.sidebar-button,
+a.sidebar-button {
+  width: 270px;
+  font-family: 'Bitter', serif;
+}
+
+
+.field-name-field-recenze a {
+  background: #71b034;
+}
+
+.views-field-field-recenze a {
+  text-align: center;
+}
+
+.views-field-field-koupit a,
+.node-kniha .views-field-view-node a,
+.views-field-field-recenze a,
+.block .views-field-field-koupit-1 a,
+.node-kniha .views-field-field-koupit-1 a {
+  display: block;
+  background: #0492ae;
+  color: #fff;
+  width: 205px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 1s ease;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 45px;
+}
+
+.block .views-field-field-koupit-1 a,
+.node-kniha .views-field-field-koupit-1 a {
+  bottom: 0;
+  background: #f23b3b;
+  width: 195px;
+  text-align: center;
+}
+
+.node-kniha .views-field-field-koupit-1 a:hover {
+  text-decoration: none;
+  background: #0492ae;
+}
+
+.view-knihy .views-field-field-obrazek img {
+  max-width: 190px;
+}
+
+.views-field-field-koupit a {
+  background: #f23b3b;
+  bottom: 0;
+}
+
+.node-kniha .views-field-view-node a {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.node-kniha .views-field-view-node a:hover,
+.views-field-field-recenze a:hover {
+  background: #679e33;
+  text-decoration: none;
+}
+
+#mc-embedded-subscribe {
+  border: 0;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+}
+
+.node-type-page #mc-embedded-subscribe,
+.sidebar #mc-embedded-subscribe,
+.front #mc-embedded-subscribe {
+  width: 300px;
+}
+
+#mc-embedded-subscribe:hover,
+.field-name-field-recenze a:hover,
+.field-name-field-koupit a:hover,
+.views-field-field-koupit a:hover,
+.sidebar a.sidebar-button:hover,
+a.sidebar-button:hover {
+  background: #0492ae;
+  text-decoration: none;
+}
+
+
+/* filters */
+
+select#edit-term-node-tid-depth,
+select#edit-term-node-tid-depth-1,
+select#edit-term-node-tid-depth-2  { -moz-appearance:none; -webkit-appearance:none; appearance:none; }
+
+select#edit-term-node-tid-depth,
+select#edit-term-node-tid-depth-1,
+select#edit-term-node-tid-depth-2  { border:none; border-radius:5px; cursor:pointer; width:400px; padding: 8px;     font-family: 'Open Sans', sans-serif; font-size: 16px; margin-right: 15px; }
+
+select#edit-term-node-tid-depth,
+select#edit-term-node-tid-depth-1,
+select#edit-term-node-tid-depth-2 {
+  background: #c9c9c9 url("https://i.imgur.com/5QfwU29.png") no-repeat scroll 200px center;
+  border: medium none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 8px;
+  width: 250px;
+}
+
+.page-recepty select#edit-term-node-tid-depth,
+.page-recepty select#edit-term-node-tid-depth-1,
+.page-recepty select#edit-term-node-tid-depth-2 {
+  width: 220px;
+}
+
+.views-exposed-form select {
+  height: 30px;
+  line-height: 30px;
+  width: 150px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0;
+  height: 30px;
+  line-height: 15px;
+}
+
+.view-prodejny .views-exposed-form .views-exposed-widget  .form-submit,
+.view-restaurace .views-exposed-form .views-exposed-widget .form-submit,
+.view-recepty .views-exposed-form .views-exposed-widget .form-submit {
+  background: #8dc63f;
+  border: 0 none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  opacity: 1;
+  text-align: center;
+  width: 170px;
+  border-radius: 5px;
+}
+
+
+/* newsletter + buttons */
+
+.more-button {
+  border-radius: 3px;
+  background-color: #fff;
+  color: #000;
+  display: block;
+  font-size: 15px;
+  height: 45px;
+  line-height: 45px;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 260px;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+
+.more-button:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.front .more-button {
+  margin-top: 30px;
+}
+
+
+/* Node */
+
+article .node {
+  margin: 30px 0;
+  background: #fff;
+  padding: 0;
+}
+
+.author-profile img {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.page-node article .node {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+article .node img {
+  max-width: 820px;
+  height: auto;
+}
+
+.field-name-body {
+  margin-bottom: 25px;
+}
+
+.field-name-field-clanek-fotografie {
+  clear: both;
+}
+
+.field-name-field-titulobr img {
+  margin-bottom: 25px;  
+}
+
+.alignleft {
+  margin-right: 10px;
+}
+
+.alignright {
+  margin-left: 10px;
+}
+
+.field-name-field-obrazek {
+  padding-bottom: 15px;
+  float: left;
+  margin: 5px 15px 0 0;
+}
+
+.node-type-prodejna .field-name-field-obrazek,
+.node-type-restaurace .field-name-field-obrazek {
+  width: 400px;
+  overflow: hidden;
+}
+
+article img.in-cont-left {
+  margin: 5px 15px 5px 0;
+}
+
+article img.in-cont-right {
+  margin: 5px 5px 5px 15px;
+}
+
+.kontakty {
+  float: left;
+  width: 390px;
+  overflow: hidden;
+}
+
+.node-author {
+  font-size: 15px;
+  clear: both;
+  height: 35px;
+}
+
+.node iframe {
+  margin-bottom: 15px;
+}
+
+.views-field-field-provize,
+.field-name-field-partnerstvi,
+.field-name-field-provize {
+  background: url("images/nakup.png") no-repeat 10px 3px;
+  color: #000;
+  line-height: 30px;
+  margin: 0 0 10px 0;
+  padding-left: 60px;
+}
+
+.views-field-field-provize {
+  margin-top: 30px;
+}
+
+.views-field-field-provize a,
+.field-name-field-partnerstvi a,
+.field-name-field-provize a {
+  background: #e72424;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+
+.field-name-field-partnerstvi {
+  background: #efefef;
+  padding: 10px 10px 0 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.field-name-field-partnerstvi a {
+  background: #e72424 none repeat scroll 0 0;
+  padding: 3px 5px;
+}
+
+.views-field-field-provize a:hover,
+.field-name-field-provize a:hover,
+.field-name-field-partnerstvi a:hover {
+  background: #8dc63f;
+  text-decoration: none;
+}
+
+.page-taxonomy-term .field-name-field-provize {
+  background: transparent;
+  line-height: auto;
+  padding-left: 0;
+}
+
+
+.field-name-field-vote {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.field-name-field-vote .fivestar-widget {
+  margin-top: 5px;
+}
+
+.field-name-field-pocetporci .field-label,
+.field-name-field-dobapripravy .field-label,
+.field-name-field-vote .field-label,
+.field-name-taxonomy-vocabulary-2 .field-label,
+.node-type-restaurace .field-name-field-vote .field-label,
+.node-type-prodejna .field-name-field-vote .field-label {
+  width: 180px;
+}
+
+.field-name-taxonomy-vocabulary-2 {
+  margin-bottom: 20px;
+}
+
+.node-type-story .field-name-taxonomy-vocabulary-2,
+.node-type-blog .field-name-taxonomy-vocabulary-2 {
+  margin-top: 20px;
+}
+
+.ul.inline {
+  display: block;
+  padding: 10px 0;
+}
+
+ul.inline li {
+  display: block;
+}
+
+.service-links ul li {
+  display: inline-block;
+  width: 100px;
+}
+
+article .block {
+  clear: both;
+}
+
+.flag-restauracefan a,
+.flag-prodejnafan a,
+.flag-receptfan a {
+  background: #0492ae;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+  margin: 5px 0 5px 145px;
+  opacity: 0.7;
+}
+
+.flag-restauracefan a,
+.flag-prodejnafan a {
+  margin: 5px 0 5px 135px;
+}
+
+.flag-restauracefan a:hover,
+.flag-prodejnafan a:hover,
+.flag-receptfan a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.otvdoba p {
+  padding-top: 5px;
+  line-height: 1.7;
+}
+
+.otvdoba td {
+  vertical-align: top;
+}
+
+.node-type-recepty .field-name-field-obrazek img {
+  max-width: 816px;
+  height: auto;
+}
+
+.fa-map-marker,
+.fa-phone,
+.fa-mobile,
+.fa-envelope,
+.fa-globe,
+.fa-clock-o  {
+  background: url('images/icons.png') no-repeat -40px -202px;
+  padding-right: 5px;
+  height: 37px;
+  width: 30px;
+  display: block;
+}
+
+.fa-mobile,
+.fa-phone  {
+  background-position: -40px -248px;
+}
+
+.fa-envelope  {
+  background-position: -40px -290px;
+}
+
+.fa-globe  {
+  background-position: -40px -328px;
+}
+
+.fa-clock-o  {
+  background-position: -40px -368px;
+}
+
+.field-field-web td {
+  overflow: hidden;
+}
+
+.field-field-web td a {
+  height: 28px;
+  line-height: 28px;
+  width: 360px;
+  overflow: hidden;
+  display: block;
+}
+
+.author-profile {
+  margin-bottom: 25px;
+}
+
+.node-type-recepty .field-name-field-obrazek {
+  float: none;
+}
+
+.node-type-recepty .field-name-field-vote .field-label,
+.node-type-recepty .field-name-field-dobapripravy .field-label,
+.node-type-recepty .field-name-body .field-label,
+.node-type-recepty .field-name-field-recepty-postup .field-label,
+.node-type-recepty .field-name-field-pocetporci .field-label,
+.node-type-recepty .field-name-taxonomy-vocabulary-2 .field-label {
+  background: url('images/icons.png') no-repeat left 0;
+  padding-right: 5px;
+  height: 30px;
+  text-indent: 35px;
+}
+
+.node-type-recepty .field-name-body .field-label {
+  background-position: -45px -100px;
+}
+
+.node-type-recepty .field-name-field-recepty-postup .field-label {
+  background-position: -45px -168px;
+}
+
+.node-type-recepty .field-name-field-dobapripravy .field-label {
+  background-position: -45px -38px;
+}
+
+.node-type-recepty .field-name-field-vote .field-label {
+  background-position: -45px -70px;
+}
+
+.node-type-recepty .field-name-field-pocetporci .field-label {
+  background-position: -45px -5px;
+}
+
+.node-type-recepty .field-name-taxonomy-vocabulary-2 .field-label {
+  background-position: -45px -128px;
+}
+
+article .block-inject {
+  margin-bottom: 20px;
+}
+
+.block-inject img {
+  margin: 0 auto;
+  display: block;
+}
+
+.field-name-taxonomy-vocabulary-2 .field-label {
+  line-height: 30px;
+}
+
+.field-name-field-recenze,
+.field-name-field-koupit {
+  padding-left: 10px;
+  float: left;
+}
+
+a.tlacitko,
+a.tagclouds,
+.views-field-taxonomy-vocabulary-2 a,
+.field-name-taxonomy-vocabulary-2 a {
+  transition: background-color 1s ease;
+  background: #8dc63f;
+  color: #fff;
+  line-height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin: 2px;
+}
+
+a.tlacitko {
+  font-family: 'Bitter', serif;
+}
+
+.field-name-taxonomy-vocabulary-2 a,
+.views-field-taxonomy-vocabulary-2 a {
+  background: #fff;
+  border: 2px solid #8dc63f;
+  color: #8dc63f;
+  font-weight: bold;
+}
+
+.field-name-taxonomy-vocabulary-2 a:hover,
+.views-field-taxonomy-vocabulary-2 a:hover {
+  background: #8dc63f;
+  color: #fff;
+  text-decoration: none;
+}
+
+.views-field-taxonomy-vocabulary-2 a,
+.field-type-taxonomy-term-reference a {
+  text-transform: lowercase;
+}
+
+.field-name-taxonomy-vocabulary-6 .field-label,
+.field-name-field-narodnikuchyne .field-label {
+  font-weight: normal;
+}
+
+.field-name-field-autorreceptu,
+.field-name-taxonomy-vocabulary-6,
+.field-name-field-narodnikuchyne {
+  padding: 0 20px 0 0;
+  float: left;
+}
+
+ul.inline,
+ul.links.inline {
+  display: block !important;
+  min-height: 30px;
+}
+
+.view-similarterms:after,
+.reference:after,
+.insert-block-box:after,
+ul.inline:after,
+.view-affiliate:after,
+#block-views-affiliate-block-1:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.content-mapa {
+  clear: both;
+}
+
+.sidebar a.tagclouds {
+  color: #fff;
+}
+
+.page-tagclouds article {
+  padding-left: 20px;
+}
+
+.block-tagclouds {
+  text-align: justify;
+}
+
+article a.tagclouds,
+.sidebar a.tagclouds {
+  margin: 3px 2px;
+}
+
+article a.tagclouds {
+  font-weight: bold;
+}
+
+a.barva-oranzova,
+.tagclouds.level2 {
+  background: #ff9000;
+  transition: background-color 1s ease;
+}
+a.barva-modra,
+.tagclouds.level3 {
+  background: #0492ae;
+  transition: background-color 1s ease;
+}
+a.barva-cervena,
+.tagclouds.level4 {
+  background: #f23b3b;
+  transition: background-color 1s ease;
+}
+.sidebar .tagclouds.level1 {
+  font-size : 0.8em;
+}
+.sidebar .tagclouds.level2 {
+  font-size : 0.9em;
+}
+.sidebar .tagclouds.level3 {
+  font-size : 1em;
+}
+.sidebar .tagclouds.level4 {
+  font-size : 1.1em;
+}
+
+.views-field-taxonomy-vocabulary-2 a {
+  font-size: 13px;
+  padding: 2px 5px;
+  text-transform: lowercase;
+}
+
+.front-blog a.tlacitko {
+  clear: both;
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+a.tlacitko:hover,
+article a.tagclouds:hover,
+.sidebar a.tagclouds:hover {
+  background: #679e33;
+  text-decoration: none;
+}
+
+.inzerce-grizly a {
+  color: #b02c77;
+}
+
+.inzerce-block a.tlacitko {
+  background: #b02c77;
+  color: #fff;
+}
+
+.node-type-restaurace .field-name-body,
+.node-type-prodejna .field-name-body {
+  clear: both;
+}
+
+#relewiki,
+#relerecepty {
+  clear: both;
+  margin: 15px 0;
+}
+
+#block-views-affiliate-block-1 {
+  margin: 20px 0;
+}
+
+.views-exposed-form {
+  margin-left: 20px;
+}
+
+.view-header {
+  padding: 0 20px;
+}
+
+.page-taxonomy-term .view-header {
+  padding-left: 0;
+}
+
+.page-restaurace article .view-header,
+.page-prodejny article .view-header {
+  padding: 0 0 20px 0;
+}
+
+
+/* akce */
+
+.view-akce .views-field-nothing {
+  background-image: linear-gradient(#fff, #fff 1em, #e7e7e7);
+  background-repeat: no-repeat;
+  border-color: -moz-use-text-color #c2c2c2 #c2c2c2;
+  border-radius: 5px;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  color: #525252;
+  float: left;
+  font-weight: bold;
+  height: 50px;
+  line-height: 1.2em;
+  margin: 0 10px 5px 0;
+  overflow: hidden;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 40px;
+}
+
+.view-akce .views-field-nothing .date-month {
+  background: #80b33e none repeat scroll 0 0;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-size: 0.8em;
+  height: 14px;
+  letter-spacing: 0.2em;
+  line-height: 14px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+.view-akce .views-field-nothing .date-day {
+  font-size: 22px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.focus {
+  background: #679e33;
+}
+
+
+/* kurzy */
+
+.page-node-2022 .container .inner,
+.page-node-1904 .container .inner,
+.page-node-1893 .container .inner,
+.page-node-1865 .container .inner,
+.page-node-1861 .container .inner,
+.page-node-1294 .container .inner,
+.page-node-1296 .container .inner,
+.page-node-1301 .container .inner,
+.page-node-1629 .container .inner,
+.page-node-1630 .container .inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-node-2022 .container .inner article,
+.page-node-1904 .container .inner article,
+.page-node-1893 .container .inner article,
+.page-node-1865 .container .inner article,
+.page-node-1861 .container .inner article,
+.page-node-1294 .container .inner article,
+.page-node-1296 .container .inner article,
+.page-node-1301 .container .inner article,
+.page-node-1629 .container .inner article,
+.page-node-1630 .container .inner article {
+  padding: 20px 40px;
+  font-size: 17px;
+  clear: both;
+}
+
+.page-node-2022 article .field-name-body,
+.page-node-1904 article .field-name-body,
+.page-node-1893 article .field-name-body,
+.page-node-1865 article .field-name-body,
+.page-node-1861 article .field-name-body,
+.page-node-1294 article .field-name-body,
+.page-node-1296 article .field-name-body,
+.page-node-1301 article .field-name-body,
+.page-node-1629 article .field-name-body,
+.page-node-1630 article .field-name-body {
+  clear: both;
+}
+
+/* prodejni formular */
+
+.form_container_title {
+
+}
+
+
+/* sidebar */
+
+.sidebar {
+  font-size: 15px;
+}
+
+.sidebar .block {
+  background: rgba(255, 255, 255, 0.7) ;
+  padding: 0 15px 15px 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar #block-block-15 {
+  padding: 0 15px 10px 15px;
+}
+
+.sidebar .views-row {
+  margin-bottom: 5px;
+  padding: 0 0 3px 0;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sidebar h3 {
+  padding: 0;
+  font-size: 15px;
+}
+
+.sidebar a {
+  color: #71b034;
+}
+
+.sidebar .views-field-field-obrazek {
+  margin-right: 10px;
+}
+
+#block-block-16 img,
+.views-field-field-reklamaobr {
+  padding: 25px 0 25px 10px;
+}
+
+.view-embed-content .views-field-field-reklamaobr {
+  padding: 0;
+}
+
+.view-embed-content h3 {
+  text-align: center;
+}
+
+.view-affiliate .views-field-field-reklamaobr {
+  padding: 0;
+}
+
+#block-block-11 p {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+#block-block-14,
+#block-block-14 p {
+  padding: 0;
+}
+
+#block-block-11 h2 {
+  padding-left: 15px;
+}
+
+#block-block-9 h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+#block-block-9 h3 a {
+  color: #0492ae;
+}
+
+#block-block-9 p {
+  font-size: 14px;
+}
+
+#block-views-recepty-block-1 img {
+  border-radius: 50%;
+}
+
+.sidebar .view-knihy .views-row {
+  margin-right: 0;
+  width: auto;
+  min-height: auto;
+}
+
+.sidebar .view-knihy .views-field-field-obrazek img {
+  margin: 0;
+  max-width: auto;
+}
+
+.sidebar .view-knihy .views-field-title {
+  height: auto;
+}
+
+.sidebar .views-field-field-koupit-1 a {
+  position: static;
+}
+
+.sidebar .view-knihy .views-row {
+  float: none;
+}
+
+.page-node-1776 .container .sidebar,
+.page-knihy .container .sidebar,
+.page-restaurace .container .sidebar,
+.page-prodejny .container .sidebar {
+  width: 100%;
+  padding: 25px 0 0 0;
+}
+
+.page-node-1776 #block-block-2,
+.page-knihy #block-block-2,
+.page-restaurace #block-block-2,
+.page-prodejny #block-block-2 {
+  display: none;
+}
+
+
+.page-node-1776 .sidebar .block,
+.page-knihy .sidebar .block,
+.page-restaurace .sidebar .block,
+.page-prodejny .sidebar .block {
+  float: left;
+  margin-right: 10px;
+  width: 265px;
+  padding: 8px;
+}
+
+#block-block-15 {
+  margin-right: 0;
+}
+
+img.respo,
+#block-block-9 img,
+#block-block-9--2 img,
+#block-block-13 img {
+  width: 270px;
+  height: auto;
+}
+
+
+/* User profile */
+
+.page-user .mujobsah table {
+  width: 100%;
+}
+
+.page-user .mujobsah td.views-field-field-obrazek {
+  width: 14%;
+}
+
+.mujobsah .views-field-title {
+  font-family: 'Open Sans', sans-serif;
+  width: 85%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.mujobsah .views-field-title a {
+  color: #000;
+}
+
+.page-user article .views-field-field-obrazek img {
+  height: auto;
+  width: 50px;
+}
+
+.field-name-field-userportret {
+  float: left;
+  margin: 5px 15px 5px 0;
+}
+
+
+/* forms */
+
+#user-login input[type="submit"], 
+#user-login input[type="text"],
+#user-login input[type="password"] {
+  border: 2px solid #000;
+  color: #000;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  width: 300px;
+}
+
+#user-login input[type="submit"] {
+  background: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#user-login input[type="submit"]:hover {
+  background: #000;
+  color: #fff;
+}
+
+#user-register-form .field-name-field-userportret {
+  float: none;
+  margin: 10px 0;
+}
+
+#edit-field-bio-und-0-format {
+  display: none;
+}
+
+#user-register-form input[type="submit"] {
+  background: #8dc63f;
+  color: #fff;
+  line-height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin: 0 1px;
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input.text,
+input.title,
+textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #BBBBBB;
+}
+
+input[type="email"], input[type="text"], input[type="password"] {
+  height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-indent: 5px;
+}
+
+.form-type-select select {
+  height: 35px;
+  border: 1px solid #bbb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.search-results .title {
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.search-results p {
+  font-size: 0.9em;
+}
+
+
+/* Pager */
+
+.item-list ul.pager li.pager-first,
+.item-list ul.pager li.pager-last {
+  display: none;
+}
+
+.item-list ul.pager {
+  padding: 15px 0;
+}
+
+.item-list ul li {
+  margin: 0 0 0.25em 0.75em;
+  padding: 0;
+}
+
+.item-list .pager li {
+  background-color: #fff;
+  display: inline-block;
+  color: #fff;
+  width: 23px;
+  height: 23px;
+  line-height: 20px;
+  border: 2px solid #000;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.item-list .pager li.pager-current {
+  background-color: #679e33;
+}
+
+.item-list .pager li a {
+  color: #679e33;
+  font-weight: bold;
+}
+
+.item-list .pager li.pager-ellipsis {
+  display: none;
+}
+
+
+/* Footer */
+
+#foot-full {
+  background: #86BF3D;
+  min-height: 339px;
+  width: 100%;
+  clear: both;
+  font-size: 14px;
+  color: #fff;
+}
+
+#footer-inner {
+  height: 339px;
+}
+
+#footer a {
+  color: #000;
+}
+
+#footer:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.footer-box {
+  float: left;
+  width: 30.33%;
+  padding: 1.5% 1.5% 5px 1.5%;
+}
+
+.footer-box h3 {
+  display: block;
+  color: #373737;
+  margin: 0;
+}
+
+
+.footer-box img {
+  margin: 5px 5px 0 0;
+  border-radius: 50%;
+}
+
+.copyright {
+  clear: both;
+  text-align: center;
+}
+
+
+/* Tabs */
+
+.tabs {
+  position: absolute;
+  top: 20px;
+  right: 20px
+}
+
+.page-search .tabs {
+  display: none;
+}
+
+#post .tabs {
+  margin-bottom: 20px;
+}
+
+.tabs ul.primary {
+  border:none
+}
+
+.tabs ul.primary li a {
+  background-color: none;
+  border: 1px;
+  height: auto;
+  margin-right: 0.5em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+.tabs ul.primary li {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.tabs ul.primary {
+  border: none;
+}
+
+.tabs ul.secondary,
+.tabs ul.primary {
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs ul.primary li,
+.tabs ul.primary li.active {
+  padding: 5px;
+  color: #29406f;
+  background: #fff;
+}
+
+.tabs ul.primary li a,
+.tabs ul.primary li.active a {
+  border: 0;
+  color: #29406f;
+  background: #fff;
+  padding: 5px;
+}
+
+/* Special */
+
+body.admin-menu {
+  margin-top: 0 !important;
+}
+
+.search-result:after,
+.region-content:after,
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+/* for netbooks tablets 960 */
+
+@media screen and (max-width: 1220px) {
+
+.page-knihy .container .inner,
+.page-restaurace .container .inner,
+.page-prodejny .container .inner,
+.page-recepty .container .inner,
+.front .container .inner,
+.node-type-page .container .inner,
+.container {
+  width: 960px;
+}
+
+.gmap-control {
+  width: 920px !important;
+}
+
+#logo,
+#logo a {
+  width: 175px;
+}
+
+#logo a {
+  background: url('images/logo.png') no-repeat -10px 0;
+  width: 175px;
+}
+
+#search {
+  width: 115px;
+}
+
+#search a {
+  margin: 30px 0 0 38px;
+}
+
+#search a.search-triger {
+  margin: 30px 0 0 38px;
+}
+
+.search-form input[type="text"] {
+  width: 80px;
+}
+
+#navigation ul li {
+  padding: 0 5px;
+}
+
+#navigation ul li a {
+  font-size: 18px;
+}
+
+.container .inner {
+  padding: 0 10px 0 0;
+  width: 670px;
+}
+
+.container .sidebar {
+  padding: 25px 0 0 10px;
+  width: 270px;
+}
+
+article .views-field-field-obrazek {
+  margin-right: 15px;
+}
+
+article .views-field-field-obrazek img {
+  width: 280px;
+  height: 210px;
+}
+
+article .node img {
+  height: auto;
+  max-width: 670px;
+}
+
+.page-node article {
+  padding: 15px 0;
+}
+
+.front #gmap-auto1map-gmap0 {
+  max-width: 100% !important;
+  max-height: 500px !important;
+}
+
+.views-row {
+  padding: 10px;
+}
+
+.view-similarterms .views-row,
+.view-similarterms .views-field-field-obrazek img {
+  width: 310px;
+}
+
+.views-row h2 {
+  font-size: 20px;
+}
+
+.views-field-field-upoutavka,
+.views-field-body {
+  font-size: 14px;
+}
+
+article h1.page-title {
+  font-size: 28px;
+}
+
+.field-name-field-titulobr img {
+  max-width: 660px;
+  width: 100%;
+  height: auto;
+}
+
+.paragraphs-item-kurzy .field-name-field-obrazekparagraf img {
+  width: 320px;
+  height: auto;
+}
+
+.node iframe {
+  width: 640px;
+  height: 360px;
+}
+
+.sidebar .block {
+  padding: 0 0 0 10px;
+}
+
+#block-block-9 img,
+#block-block-9--2 img,
+#block-block-13 img {
+  width: 250px;
+}
+
+.views-field-field-reklamaobr {
+  padding: 15px 0 15px 0px;
+}
+
+.page-node-1289 .views-row-4,
+.front .views-row-4 {
+  display: none;
+}
+
+.front .numbers .views-row-4 {
+  display: block;
+}
+
+.field-name-field-clanek-fotografie .field-item:nth-of-type(3n), .field-name-field-restaurace-fotografie .field-item:nth-of-type(3n), .field-name-field-prodejna-fotografie .field-item:nth-of-type(3n), .view-relevantnirecepty .views-row:nth-of-type(3n), .view-aktualniclanky .views-row:nth-of-type(3n), .view-relevantniwiki .views-row:nth-of-type(3n), .view-wiki .views-row-3, .view-wiki .views-row-6, .view-wiki .views-row-9, .view-wiki .views-row-12, .view-wiki .views-row-15 {
+  margin-right: 17px;
+}
+
+.field-name-field-clanek-fotografie .field-item:nth-of-type(2n), .field-name-field-restaurace-fotografie .field-item:nth-of-type(2n), .field-name-field-prodejna-fotografie .field-item:nth-of-type(2n), .view-relevantnirecepty .views-row:nth-of-type(2n), .view-aktualniclanky .views-row:nth-of-type(2n), .view-relevantniwiki .views-row:nth-of-type(2n), .view-wiki .views-row-2, .view-wiki .views-row-4, .view-wiki .views-row-6, .view-wiki .views-row-8, .view-wiki .views-row-10 .view-wiki .views-row-12, .view-wiki .views-row-14, .front .view-wiki .views-row-2, .front .view-wiki .views-row-4 {
+  margin-right: 0;
+}
+
+.field-name-field-clanek-fotografie .field-item, .field-name-field-restaurace-fotografie .field-item, .field-name-field-prodejna-fotografie .field-item, .view-relevantniwiki .views-row, .view-relevantnirecepty .views-row, .view-aktualniclanky .views-row {
+  width: 311px;
+}
+
+.field-name-field-clanek-fotografie img, .field-name-field-restaurace-fotografie img, .field-name-field-prodejna-fotografie img, .view-relevantniwiki .views-field-field-obrazek img, .view-relevantnirecepty .views-field-field-obrazek img, .view-aktualniclanky .views-field-field-obrazek img {
+  width: 311px;
+}
+
+.page-restaurace .views-row,
+.page-prodejny .views-row,
+.page-recepty .views-row,
+.page-node-1289 .views-row,
+.page-node-1289 .view-recepty .views-row,
+.front .view-recepty .views-row,
+.front .view-clanky .views-row,
+.page-node-1289 .views-row,
+.view-wiki  .views-row {
+  padding: 10px 10px;
+  width: 280px;
+  margin-right: 10px;
+}
+
+.view-wiki  .views-row {
+  padding: 10px 10px 0 10px;
+}
+
+.page-restaurace .views-field-field-obrazek img,
+.page-prodejny .views-field-field-obrazek img,
+.page-recepty .views-field-field-obrazek img,
+.front .views-field-field-obrazek img,
+.view-wiki  .views-row img {
+  width: 280px;
+  height: auto;
+}
+
+.view-wiki  .views-row img {
+  height: auto;
+}
+
+.page-restaurace article .views-row,
+.page-prodejny article .views-row,
+.page-recepty .view-recepty .views-row {
+  min-height: 310px;
+}
+
+.page-node-1289 .view-wiki .views-field-field-obrazek img {
+  width: 265px;
+  height: auto;
+}
+
+.numbers .views-row {
+  width: 212px;
+}
+
+.numbers h3 {
+  font-size: 90px;
+}
+
+.half-box img {
+  width: 460px;
+  height: auto;
+}
+
+.insert-block-box .kurz-promo {
+  margin: 15px 35px 15px 0;
+}
+
+.kurz-promo {
+  font-size: 16px;
+  background: #fff;
+  padding: 0;
+}
+
+#obeznik img,
+article #newsletter img {
+  display: none;
+}
+
+#mc-embedded-subscribe {
+  width: 300px;
+}
+
+.field-name-field-obrazekparagraf img,
+article .views-field-field-obrazek img {
+  width: 240px;
+  height: auto;
+}
+
+.field-name-field-textparagraf {
+  font-size: 15px;
+}
+
+.view-affiliate .views-row-4 {
+  display: none;
+}
+
+#footer-inner {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#veg-info,
+#veg-partneri {
+  width: 250px;
+}
+
+#fb-box {
+  width: 475px;
+}
+
+}
+
+
+/* for tablets 768 */
+
+@media screen and (max-width: 960px) {
+
+.node-fullwidth .container,
+.container {
+  width: 768px;
+}
+
+.page-knihy .container .inner, .page-restaurace .container .inner, .page-prodejny .container .inner, .page-recepty .container .inner, .front .container .inner, .page-node-1289 .container .inner, .node-type-page .container .inner {
+  width: 768px;
+}
+
+.gmap-control {
+  width: 730px !important;
+}
+
+#logo, #logo a {
+  width: 200px;
+}
+
+#navigation ul li a {
+  font-size: 16px;
+  padding: 27px 5px 0 5px;
+}
+
+#search {
+  display: none;
+}
+
+#search a {
+  margin: 32px 0 0 38px;
+}
+
+.search-form #edit-basic {
+  clear: both;
+  width: 300px;
+  margin-top: 10px;
+}
+
+#banner,
+.fullwidth-banner,
+#search {
+  display: none;
+}
+
+.container .inner,
+.container .sidebar {
+  padding: 0;
+  width: 768px;
+}
+
+.responsive-menus.responsified {
+  width: 280px;
+  float: left;
+  clear: none;
+  height: 45px;
+  line-height: 33px;
+  margin-top: 30px;
+}
+
+.responsive-menus.responsified span.toggler {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: 0 0 0 #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.responsive-menus.responsified .responsive-menus-simple  {
+  background: rgba(103, 158, 51, 0.85);
+}
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom: 0;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li a,
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+  text-indent: 8px;
+}
+
+#navigation ul li.menu-7545 {
+  display: block;
+}
+
+.stickynav-active .responsive-menus.responsified {
+  margin-top: 10px;
+}
+
+article .node img {
+  height: auto;
+  max-width: 735px;
+}
+
+.container .sidebar,
+.front .container .sidebar {
+  padding: 20px 0 0 0;
+}
+
+.front .field-name-body {
+  font-size: 16px;
+}
+
+.page-restaurace .views-row, .page-prodejny .views-row, .page-recepty .view-recepty .views-row, .numbers .views-row, .page-node-1289 .views-row, .page-node-1289 .view-recepty .views-row,
+.front .view-recepty .views-row, .front .view-clanky .views-row, .page-node-1289 .views-row,
+.field-name-field-clanek-fotografie .field-item, .field-name-field-restaurace-fotografie .field-item, .field-name-field-prodejna-fotografie .field-item, .view-relevantniwiki .views-row, .view-relevantnirecepty .views-row, .view-aktualniclanky .views-row, .view-wiki .views-row, .view-similarterms .views-row {
+  width: 360px;
+}
+
+.numbers h3 {
+  font-size: 120px;
+}
+
+.view-similarterms .views-row,
+.page-restaurace .views-row,
+.page-prodejny .views-row,
+.page-recepty .view-recepty .views-row,
+.numbers .views-row,
+.front .view-recepty .views-row,
+.front .view-wiki .views-row,
+.front .view-clanky .views-row,
+.page-node-1289 .views-row,
+.page-node-1289 .view-recepty .views-row {
+  padding: 10px 0;
+  margin-right: 13px;
+}
+
+.page-restaurace .views-row:nth-of-type(2n),
+.page-prodejny .views-row:nth-of-type(2n),
+.page-recepty .view-recepty .views-row:nth-of-type(2n),
+.front .numbers .views-row:nth-of-type(2n),
+.front .view-recepty .views-row:nth-of-type(2n),
+.front .view-clanky .views-row:nth-of-type(2n),
+.front .view-wiki .views-row:nth-of-type(2n),
+.page-node-1289 .views-row:nth-of-type(2n),
+.page-node-1289 .view-recepty .views-row:nth-of-type(2n),
+.view-similarterms .views-row:nth-of-type(2n),
+.view-wiki .views-row-even {
+  margin-right: 0;
+}
+
+.field-name-field-obrazekparagraf,
+.field-name-field-textparagraf,
+.half-box {
+  width: 100%;
+  float: none;
+}
+
+.field-name-field-obrazekparagraf img {
+  float: none;
+  margin-right: 0;
+}
+
+.node-type-recepty .field-name-field-obrazek img {
+  width: 738px;
+  height: auto;
+}
+
+.paragraphs-item-kurzy .field-name-field-obrazekparagraf img {
+  width: auto;
+  height: auto;
+}
+
+#mc_embed_signup_scroll {
+  margin-left: 0px;
+}
+
+.kurz-promo {
+  margin: 15px 0;
+}
+
+#obeznik img,
+article #newsletter img {
+  display: block;
+}
+
+.field-name-field-clanek-fotografie img, .field-name-field-restaurace-fotografie img, .field-name-field-prodejna-fotografie img, .view-relevantniwiki .views-field-field-obrazek img, .view-relevantnirecepty .views-field-field-obrazek img, .view-aktualniclanky .views-field-field-obrazek img, .view-wiki .views-field-field-obrazek img, .view-similarterms .views-field-field-obrazek img {
+  width: 360px;
+}
+
+.page-restaurace article .views-field-field-obrazek img,
+.page-prodejny article .views-field-field-obrazek img,
+.page-recepty .views-field-field-obrazek img,
+.page-node-1289 .view-wiki .views-field-field-obrazek img,
+.page-node-1289 .views-field-field-obrazek img,
+.front .views-field-field-obrazek img {
+  width: 360px;
+  height: auto;
+}
+
+article .view-wiki .views-field-field-obrazek {
+  margin-right: 0;
+}
+
+.view-wiki .views-row {
+  padding: 0;
+}
+
+.field-name-field-titulobr img {
+  max-width: 738px;
+}
+
+.page-node-1289 .views-row-4,
+.front .views-row-4 {
+  display: block;
+}
+
+.node iframe {
+  width: 738px;
+  height: 415px;
+}
+
+.sidebar .block {
+  width: 352px;
+  float: left;
+}
+
+#block-block-5,
+#block-views-reklama-block-1,
+#veg-partneri {
+  clear: both;
+}
+
+#block-views-reklama-block-1 {
+  display: none;
+}
+
+.sidebar .block:nth-of-type(2n) {
+  margin-left: 20px;
+}
+
+#foot-full,
+#footer-inner {
+  background: rgba(93, 141, 28, 0.9);
+  height: auto;
+}
+
+#footer-inner {
+  font-size: 15px;
+}
+
+#veg-partneri {
+  max-width: 738px;
+}
+
+.mc-field-group label {
+  float: none;
+}
+
+.mc-field-group-email label {
+    line-height: 30px;
+}
+
+#mc_embed_signup input[type="email"], #mc_embed_signup input[type="text"], .sidebar input[type="email"], .sidebar input[type="text"] {
+  width: 300px;
+}
+
+
+}
+
+
+/* for smartphones 460 */
+
+@media screen and (max-width: 768px) {
+
+body {
+  background: #fff;
+}
+
+.node-fullwidth .container,
+.container,
+.container .inner,
+.container .sidebar {
+  width: 460px;
+}
+
+.page-knihy .container .inner,
+.page-restaurace .container .inner,
+.page-prodejny .container .inner,
+.page-recepty .container .inner,
+.front .container .inner,
+.node-type-page .container .inner {
+  width: 460px;
+}
+
+.view-similarterms .views-row,
+.view-similarterms .views-field-field-obrazek img {
+  width: 460px;
+}
+
+.view-similarterms .views-row {
+  margin-right: 0;
+}
+
+.page-node-1904 .container .inner article,
+.page-node-1865 .container .inner article,
+.page-node-1861 .container .inner article,
+.page-node-1893 .container .inner article,
+.page-node-1294 .container .inner article,
+.page-node-1296 .container .inner article,
+.page-node-1301 .container .inner article,
+.page-node-1629 .container .inner article,
+.page-node-1630 .container .inner article {
+  padding: 10px 0;
+}
+
+.front h2,
+.page-node-1301 .container .inner article h1.page-title,
+.page-node-1630 .container .inner article h1.page-title {
+  font-size: 20px;
+}
+
+.gmap-control {
+  width: 460px !important;
+}
+
+.box-pulsirky {
+  float: none;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.page-restaurace article,
+.page-prodejny article,
+.page-recepty article,
+.page-user article,
+.page-node article {
+  padding: 15px 0;
+}
+
+#search {
+  display: none;
+}
+
+#head-full {
+  height: 75px;
+}
+
+#logo,
+#logo a {
+  width: 170px;
+}
+
+#logo a {
+  background: rgba(0, 0, 0, 0) url("images/logo.png") no-repeat scroll -8px 0;
+}
+
+.page-node article {
+  margin: 5px 0;
+  padding: 15px 0;
+}
+
+article .field-name-field-obrazek img,
+article .views-field-field-obrazek {
+  float: none;
+}
+
+.page-restaurace .view-restaurace .views-row,
+.page-prodejny .view-prodejny .views-row,
+.page-recepty .view-recepty .views-row,
+.front .view-recepty .views-row,
+.front .view-clanky .views-row,
+.page-node-1289 .views-row {
+  width: 460px;
+  float: none;
+  padding: 10px 0;
+  margin-right: 0;
+}
+
+.front .view-wiki .views-row {
+  margin: 0;
+}
+
+.paragraphs-item-kurzy .field-name-field-obrazekparagraf img,
+.page-restaurace article .views-row img,
+.page-prodejny article .views-row img,
+.page-recepty .view-recepty .views-row img,
+.front .view-recepty .views-row img,
+.front .view-clanky .views-row img,
+.page-node-1289 .views-row img,
+.page-node-1289 .view-wiki .views-field-field-obrazek img,
+article .field-name-field-obrazek img,
+article .views-field-field-obrazek img {
+  width: 460px;
+  height: auto;
+}
+
+.page-restaurace .views-row, .page-prodejny .views-row, .page-recepty .view-recepty .views-row, .numbers .views-row, .page-node-1289 .views-row, .page-node-1289 .view-recepty .views-row, .front .view-recepty .views-row, .front .view-clanky .views-row, .page-node-1289 .views-row, .field-name-field-clanek-fotografie .field-item, .field-name-field-restaurace-fotografie .field-item, .field-name-field-prodejna-fotografie .field-item, .view-relevantniwiki .views-row, .view-relevantnirecepty .views-row, .view-aktualniclanky .views-row, .view-wiki .views-row,
+.field-name-field-clanek-fotografie img, .field-name-field-restaurace-fotografie img, .field-name-field-prodejna-fotografie img, .view-relevantniwiki .views-field-field-obrazek img, .view-relevantnirecepty .views-field-field-obrazek img, .view-aktualniclanky .views-field-field-obrazek img, .view-wiki .views-field-field-obrazek img {
+  width: 460px;
+}
+
+.page-restaurace article .views-field-field-obrazek img,
+.page-prodejny article .views-field-field-obrazek img,
+.page-recepty .views-field-field-obrazek img,
+.page-node-1289 .view-wiki .views-field-field-obrazek img,
+.page-node-1289 .views-field-field-obrazek img,
+.front .views-field-field-obrazek img {
+  width: 460px;
+  height: auto;
+}
+
+#block-inject-2 img {
+  width: 460px !important;
+  height: 60px !important;
+}
+
+.numbers .views-row {
+  width: 215px;
+}
+
+.numbers h3 {
+  font-size: 80px;
+}
+
+.field-name-body img {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+}
+
+.node-type-recepty .field-name-field-obrazek img {
+  width: 460px;
+}
+
+.insert-block-box .kurz-promo {
+  margin: 30px 0;
+}
+
+.mobile-banner {
+  display: block;
+}
+
+.mobile-banner img {
+  display: block;
+  margin: 0 auto;
+}
+
+.field-name-body .mobile-banner img {
+  max-width: 300px;
+}
+
+
+#veg-partneri {
+  width: 100%;
+  max-width: 460px;
+}
+
+.node iframe {
+  width: 460px;
+  height: 259px;
+}
+
+.view-affiliate .views-row-4 {
+  display: block;
+}
+
+#obeznik label,
+#newsletter label {
+  clear: both;
+}
+
+.flag-restauracefan a,
+.flag-prodejnafan a,
+.flag-receptfan a {
+  margin: 5px 0 5px 5px;
+}
+
+.view-similarterms .views-row {
+  min-height: auto;
+}
+
+.sidebar .block {
+  padding: 10px 0;
+}
+
+.sidebar .block {
+  width: 460px;
+}
+
+.sidebar .block:nth-of-type(2n) {
+  margin-left: 0;
+}
+
+img.respo,
+#block-block-9 img,
+#block-block-9--2 img,
+#block-block-13 img {
+  width: 460px;
+}
+
+#obeznik img,
+#newsletter img {
+  width: 435px;
+  margin-bottom: 1em;
+}
+
+.view-affiliate .views-row {
+  width: 210px;
+}
+
+.view-affiliate .views-field-field-reklamaobr img {
+  width: 210px;
+}
+
+.view-knihy .views-row {
+  margin-right: 10px;
+  width: 210px;
+}
+
+.view-knihy .views-row:nth-of-type(5n) {
+  margin-right: 10px;
+}
+
+.field-name-field-textvlevo,
+.field-name-field-textvpravo,
+.field-name-field-textparagraf,
+.field-name-field-obrazekparagraf {
+  width: 100%;
+  float: none;
+}
+
+.field-name-field-galeriemezitext .field-item img,
+.field-name-field-obrazekparagraf img {
+  width: 460px;
+  float: none;
+  margin-right: 0;
+}
+
+.field-name-field-galeriemezitext .field-item img {
+  margin-bottom: 20px;
+}
+
+.field-name-field-textvlevo .field-item,
+.field-name-field-textvpravo .field-item {
+  padding: 0;
+}
+
+.footer-box {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+
+}
+
+/* for oldphones 300 */
+
+@media screen and (max-width: 460px) {
+
+.node-fullwidth .container,
+.page-restaurace .container .inner,
+.page-prodejny .container .inner,
+.page-recepty .container .inner,
+.front .container .inner,
+.node-type-page .container .inner,
+.container,
+.container .inner,
+.container .sidebar,
+.footer-center {
+  width: 300px;
+}
+
+.page-recepty .view-recepty .views-row img,
+article .field-name-field-obrazek img,
+article .views-field-field-obrazek img {
+  width: 300px;
+}
+
+.page-recepty .view-recepty .views-row, .field-name-field-clanek-fotografie .field-item, .field-name-field-restaurace-fotografie .field-item, .field-name-field-prodejna-fotografie .field-item, .view-relevantniwiki .views-row, .view-relevantnirecepty .views-row, .view-aktualniclanky .views-row, .view-wiki .views-row {
+  width: 300px;
+  padding: 15px 0;
+}
+
+.view-similarterms .views-row,
+.view-similarterms .views-field-field-obrazek img {
+  width: 300px;
+}
+
+.view-relevantniwiki .views-row img,
+.view-affiliate .views-field-field-reklamaobr img,
+.view-wiki .views-field-field-obrazek img {
+  width: 300px;
+}
+
+.view-knihy .views-row, .view-relevantniwiki .views-row, .view-affiliate .views-row, .view-wiki .views-row {
+  margin-right: 0;
+  width: 300px;
+}
+
+
+.item-list ul.pager {
+  max-width: 300px;
+}
+
+.page-recepty .view-recepty .views-row {
+  min-height: 270px;
+}
+
+#logo,
+#logo a {
+  width: 300px;
+  height: 45px;
+}
+
+#logo a {
+  background: url('images/logo-height-45.png') no-repeat center 0;
+}
+
+#nav-container.stickynav-active,
+#head-full {
+  height: 80px;
+}
+
+.responsive-menus.responsified {
+  clear: both;
+  line-height: 33px;
+  margin-top: 0px;
+  width: 300px;
+}
+
+.stickynav-active .responsive-menus.responsified {
+  margin-top: 0px;
+}
+
+.stickynav-active #logo a {
+  background: url('images/logo-height-45.png') no-repeat center 0;
+  width: 300px;
+  height: 45px;
+}
+
+
+.paragraphs-item-kurzy .field-name-field-obrazekparagraf img,
+.numbers .views-row,
+.page-restaurace article .views-row img,
+.page-prodejny article .views-row img,
+.front .view-recepty .views-row img,
+.front .view-clanky .views-row img,
+.page-node-1289 .views-row img,
+.page-node-1289 .view-wiki .views-field-field-obrazek img,
+.field-name-field-clanek-fotografie img, .field-name-field-restaurace-fotografie img, .field-name-field-prodejna-fotografie img, .view-relevantniwiki .views-field-field-obrazek img, .view-relevantnirecepty .views-field-field-obrazek img, .view-aktualniclanky .views-field-field-obrazek img, .view-wiki .views-field-field-obrazek img {
+  width: 300px;
+}
+
+.page-restaurace .views-row, .page-prodejny .views-row, .page-recepty .view-recepty .views-row, .numbers .views-row, .page-node-1289 .views-row, .page-node-1289 .view-recepty .views-row, .front .view-recepty .views-row, .front .view-clanky .views-row, .page-node-1289 .views-row, .field-name-field-clanek-fotografie .field-item, .field-name-field-restaurace-fotografie .field-item, .field-name-field-prodejna-fotografie .field-item, .view-relevantniwiki .views-row, .view-relevantnirecepty .views-row, .view-aktualniclanky .views-row, .view-wiki .views-row,
+.field-name-field-clanek-fotografie img, .field-name-field-restaurace-fotografie img, .field-name-field-prodejna-fotografie img, .view-relevantniwiki .views-field-field-obrazek img, .view-relevantnirecepty .views-field-field-obrazek img, .view-aktualniclanky .views-field-field-obrazek img, .view-wiki .views-field-field-obrazek img {
+  width: 300px;
+}
+
+.page-restaurace article .views-field-field-obrazek img,
+.page-prodejny article .views-field-field-obrazek img,
+.page-recepty .views-field-field-obrazek img,
+.page-node-1289 .view-wiki .views-field-field-obrazek img,
+.page-node-1289 .views-field-field-obrazek img,
+.front .views-field-field-obrazek img {
+  width: 300px;
+  height: auto;
+}
+
+.numbers h3 {
+  font-size: 120px;
+}
+
+#block-inject-2,
+.front .mapa,
+.half-box img {
+  display: none;
+}
+
+.views-row {
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+.node iframe {
+  width: 300px;
+  height: 170px;
+}
+
+#fb-box,
+.sidebar .block {
+  width: 300px;
+}
+
+#obeznik img,
+#newsletter img,
+#mc-embedded-subscribe,
+#obeznik input[type="email"],
+#obeznik input[type="text"],
+#newsletter input[type="email"],
+#newsletter input[type="text"],
+.half-box input[type="email"],
+.half-box input[type="text"] {
+  width: 270px;
+}
+
+img.respo,
+#block-block-9 img,
+#block-block-9--2 img,
+#block-block-13 img {
+  width: 300px;
+}
+
+.field-name-body img {
+  max-width: 300px;
+}
+
+#fb-box iframe {
+  display: none;
+}
+
+.field-name-field-galeriemezitext .field-item img,
+.field-name-field-obrazekparagraf img {
+  width: 300px;
+}
+
+}
